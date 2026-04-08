@@ -1,0 +1,48 @@
+.footer {
+  background: #233345;
+  color: #fff;
+  padding: 40px 20px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+
+    svg {
+      width: 30px;
+      fill: #fff;
+    }
+  }
+
+  &__col ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ccc;
+
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+  }
+}

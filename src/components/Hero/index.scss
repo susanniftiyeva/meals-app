@@ -1,0 +1,32 @@
+.hero {
+  min-height: 60vh; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 80px;
+  background-image: url(../../assets/images/flat-lay-mussels-white-sauce-sides-tablecloth-with-copyspace.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  margin-bottom: 40px;
+  .hero-content {
+    max-width: 500px;
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 19px;
+    }
+
+    button{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 80px;
+        border-radius: 90px;
+        background-color: #b53811;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.meal-list {
+  padding: 30px;
+  margin: 80px 0;
+  
+  .meal-list-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 19px;
+    }
+  }
+  .meal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .meal-list .meal-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 600px){
+    .meal-list{
+        padding: 16px;
+    }
+    .meal-list .meal-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .meal-list-title p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+}

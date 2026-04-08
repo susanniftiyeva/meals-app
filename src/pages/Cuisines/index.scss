@@ -1,0 +1,43 @@
+.cuisines-page h2{
+margin-left: 40px;
+font-size: 30px;
+color: #242323 ;
+}
+.areas-list {
+  gap: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 40px 30px;
+  padding: 30px;
+  background-color: #f5f3e7;
+  border-radius: 30px;
+
+  li{
+     list-style-position: inside;
+  }
+}
+
+.areas-list a {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: none;
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #242323  ;
+
+  &:hover {
+    color: #c7ac13;
+  }
+}
+
+.areas-list li::marker{
+  color: #bea61c;
+  font-size: 30px;
+}
+
+

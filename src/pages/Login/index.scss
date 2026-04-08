@@ -1,0 +1,114 @@
+.login {
+  min-height: 100vh;
+  background: #f4f3f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    background: #fff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+  }
+
+  &__group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      outline: none;
+      transition: 0.2s;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: #3b82f6;
+      }
+    }
+
+    .error {
+      border-color: red !important;
+    }
+
+    .error-text {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+    }
+  }
+
+  .password-wrapper {
+    position: relative;
+
+    input {
+      padding-right: 40px;
+    }
+
+    i {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #64748b;
+    }
+  }
+
+  &__forgot {
+    text-align: right;
+    margin-bottom: 20px;
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #2563eb;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+
+  &__btn.disabled {
+    background: #cbd5e1;
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  &__btn.active {
+    background: #3b82f6;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #2563eb;
+    }
+  }
+
+  &__signup {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}   
